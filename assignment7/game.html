@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container {
+            display: flex;
+            justify-content: center;
+        }
+        .inner{
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 5%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner" id="valo">
+
+        </div>
+        <div class="inner" id="bgmi">
+
+        </div>
+        <div class="inner" id="sub">
+            
+        </div>
+    </div>
+    <script>
+        const games=new Object({
+            game1:["valorant",99999,"128gb"],
+            game2:["bgmi",89999,"256gb"],
+            game3:["subway surfers",49999,"128gb"]
+        });
+        document.getElementById("valo").innerHTML=games.game1;
+        document.getElementById("bgmi").innerHTML=games.game2;
+        document.getElementById("sub").innerHTML=games.game3;
+    </script>
+</body>
+</html>

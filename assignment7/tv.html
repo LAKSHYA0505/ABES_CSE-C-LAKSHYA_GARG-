@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container {
+            display: flex;
+            justify-content: center;
+        }
+        .inner{
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 5%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner" id="lg">
+
+        </div>
+        <div class="inner" id="samsung">
+
+        </div>
+        <div class="inner" id="oneplus">
+            
+        </div>
+    </div>
+    <script>
+        const tv=new Object({
+            tv1:["lg",99999,"128gb"],
+            tv2:["samsung",89999,"256gb"],
+            tv3:["oneplus",49999,"128gb"]
+        });
+        document.getElementById("lg").innerHTML=tv.tv1;
+        document.getElementById("samsung").innerHTML=tv.tv2;
+        document.getElementById("oneplus").innerHTML=tv.tv3;
+    </script>
+</body>
+</html>
