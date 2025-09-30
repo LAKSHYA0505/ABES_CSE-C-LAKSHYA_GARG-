@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mypromise = new Promise((resolve, reject) => {
+            const password="12345";
+            if(password.length > 5){
+                resolve("Strong Password");
+            } else {
+                reject("Weak Password");
+            }
+        })
+        mypromise.then((message) => {
+            console.log("This is in the then " + message);
+        }).catch((message) => {
+            console.log("This is in the catch " + message);
+        });
+    </script>
+</body>
+</html>
